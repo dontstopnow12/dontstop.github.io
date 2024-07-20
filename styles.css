@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background: #121212;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+header {
+    background: rgba(28, 28, 28, 0.9);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    flex: 1;
+    padding: 20px 0;
+    position: relative;
+}
+
+main > div {
+    background: rgba(28, 28, 28, 0.8);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+footer {
+    background: rgba(28, 28, 28, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px 0;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Background Images */
+.index {
+    background: url('home 3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.news {
+    background: url('home 4.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.reviews {
+    background: url('home 1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.trends {
+    background: url('home 8.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.articles {
+    background: url('home 8.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.about {
+    background: url('home 9.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.contact {
+    background: url('home 10.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Specific Section Styles */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.news-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.news-item {
+    background: rgba(255, 255, 255, 0.8);
+    color:black;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(50% - 20px);
+}
+
+.news-item h3 {
+    margin-top: 0;
+}
+
+.trending-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.topic-item {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1 1 calc(50% - 20px);
+}
+
+.articles-contents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .news-item, .topic-item {
+        flex: 1 1 100%;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+}
